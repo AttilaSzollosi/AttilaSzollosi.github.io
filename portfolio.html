@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Attila Szöllősi</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,18 +16,27 @@
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="language-switcher">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('de')">DE</button>
+            </div>
         </nav>
     </header>
     <main>
         <section id="portfolio">
-            <h1>Portfolio</h1>
+            <h1 data-lang="en">Portfolio</h1>
+            <h1 data-lang="de" style="display:none;">Portfolio</h1>
             <div class="project">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
+                <h2 data-lang="en">Project 1</h2>
+                <h2 data-lang="de" style="display:none;">Projekt 1</h2>
+                <p data-lang="en">Description of Project 1...</p>
+                <p data-lang="de" style="display:none;">Beschreibung des Projekts 1...</p>
             </div>
             <div class="project">
-                <h2>Project 2</h2>
-                <p>Description of Project 2...</p>
+                <h2 data-lang="en">Project 2</h2>
+                <h2 data-lang="de" style="display:none;">Projekt 2</h2>
+                <p data-lang="en">Description of Project 2...</p>
+                <p data-lang="de" style="display:none;">Beschreibung des Projekts 2...</p>
             </div>
             <!-- Add more projects -->
         </section>
