@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('rainbow.jpg') no-repeat center center fixed;
+    opacity: 0.5;
     background-size: cover;
 }
 
@@ -25,6 +26,8 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .navbar li {
@@ -37,6 +40,7 @@ nav {
     padding: 10px 15px;
     display: flex;
     align-items: center;
+    font-size: 1em;
 }
 
 .navbar a:hover {
@@ -46,13 +50,14 @@ nav {
 
 .language-switcher {
     margin-left: auto;
+    display: flex;
 }
 
 .language-switcher button {
     background: none;
     border: none;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
     margin-left: 10px;
 }
