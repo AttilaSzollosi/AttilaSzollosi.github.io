@@ -36,3 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.querySelectorAll('.project').forEach(project => {
+    project.addEventListener('click', function() {
+        this.classList.toggle('open');
+    });
+});

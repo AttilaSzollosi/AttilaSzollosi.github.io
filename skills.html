@@ -1,65 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills - Attila Szöllősi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-container">
-                <a href="#" class="menu-toggle"><i class="bi bi-list"></i></a>
-                <ul class="navbar">
-                    <li><a href="index.html"><i class="bi bi-house"></i>&nbspHome</a></li>
-                    <li><a href="about.html"><i class="bi bi-person"></i>&nbspAbout</a></li>
-                    <li><a href="skills.html"><i class="bi bi-book"></i>&nbspSkills</a></li>
-                    <li><a href="work-experience.html"><i class="bi bi-briefcase"></i>&nbspExperience</a></li>
-                    <li><a href="contact.html"><i class="bi bi-envelope"></i>&nbspContact</a></li>
-                    <li class="language-switcher">
-                        <button onclick="setLanguage('en')" title="English"><i class="bi bi-flag-fill"></i>EN</button>
-                        <button onclick="setLanguage('de')" title="Deutsch"><i class="bi bi-flag"></i>DE</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-container">
+          <a href="#" class="menu-toggle"><i class="bi bi-list"></i></a>
+          <ul class="navbar">
+            <li>
+              <a href="index.html"><i class="bi bi-house"></i>&nbspHome</a>
+            </li>
+            <li>
+              <a href="about.html"><i class="bi bi-person"></i>&nbspAbout</a>
+            </li>
+            <li>
+              <a href="skills.html"><i class="bi bi-book"></i>&nbspSkills</a>
+            </li>
+            <li>
+              <a href="work-experience.html"
+                ><i class="bi bi-briefcase"></i>&nbspExperience</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="bi bi-envelope"></i>&nbspContact</a
+              >
+            </li>
+            <li class="language-switcher">
+              <button onclick="setLanguage('en')" title="English">
+                <i class="bi bi-flag-fill"></i>EN
+              </button>
+              <button onclick="setLanguage('de')" title="Deutsch">
+                <i class="bi bi-flag"></i>DE
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-       
-    <main class="main-content"> <!-- Adjust margin-left according to sidebar width -->
-        <section id="studies">
-            <h1 data-lang="en">My Skills</h1>
-            <h1 data-lang="de" style="display:none;">My Skills</h1>
-            <div class="project" id="project1">
-                <p data-lang="en">I have extensive experience in the field of IT as a Product Manager, Leader,
-                     and DecSecOps Transformation. As a Product Manager, 
-                     I have successfully led teams in the development and launch of innovative software solutions.
-                      My leadership skills have enabled me to effectively communicate and collaborate with cross-functional 
-                      teams, ensuring that projects are delivered on time and within budget. Additionally, 
-                      I have a strong background in DecSecOps Transformation, implementing strategies and processes to enhance security and operational efficiency. With my expertise in these areas, I have consistently delivered high-quality results and exceeded client expectations. I am confident that my skills and experience make me a valuable asset in any IT organization.</p>
-                <p data-lang="de" style="display:none;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            </div>
-           
 
-            <div class="project" id="project2">
-                <h2 data-lang="en">Project 2</h2>
-                <h2 data-lang="de" style="display:none;">Projekt 2</h2>
-                <p data-lang="en">Description of Project 2...</p>
-                <p data-lang="de" style="display:none;">Beschreibung des Projekts 2...</p>
+    <main class="main-content">
+      <section id="studies" class="skill-section">
+        <div class="project" id="project1">
+          <div class="project-header">
+            <h2>Programming languages</h2>
+          </div>
+          <div class="skill-details">
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/tsjs.png" />
+              <p>
+                Anyone involved in web development is bound to encounter
+                <strong>JavaScript</strong>. All the web applications I've
+                developed so far include <strong>JavaScript</strong> code to
+                varying degrees. I use this language daily, and I really
+                appreciate its versatility and flexibility. I became acquainted
+                with the <strong>TypeScript</strong> superset when I started
+                using the Angular framework, and it's very useful in development
+                because the types help a lot in discovering errors
+              </p>
             </div>
-            <!-- Add more projects -->
-        </section>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/gopher.jpg" />
+              <p>
+                I first encountered the <strong>Go(lang)</strong> at my current
+                workplace, and I was really impressed by its simplicity and
+                speed. With this backend language, it's possible to write
+                complex applications very quickly. The
+                <strong>GORM and ECHO</strong> frameworks make database
+                management and the creation of API endpoints much easier to
+                execute. I currently use these tools in my development work.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/Java.png" />
+              <p>
+                The first programming language I encountered in my career was
+                <strong>Java</strong>. Although the syntax seemed complicated at
+                first, it was through this language that I understood the basics
+                of object-oriented programming. Therefore, I wrote my first
+                programs in this language as well. I also have some experience
+                with the <strong>Spring framework</strong>, although I still
+                have a lot to learn to fully master its functionality.
+              </p>
+            </div>
+
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/Csharp.png" />
+              <p>
+                During my university studies, we completed programming tasks and
+                wrote algorithms in <strong>C++ and C#</strong>. This gave me
+                the opportunity to get to know these two languages in detail and
+                how to use them in a desktop environment. Although I haven't
+                practiced these languages recently, I'm confident that I would
+                quickly get back into using them if needed.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/php.png" />
+              <p>
+                During my university studies, we wrote the backend parts of our
+                web programming tasks in <strong>PHP</strong>. This allowed me
+                to become more familiar with the use of this language in detail.
+                The most extensive <strong>PHP</strong> application I developed
+                was for my thesis, where I handled the frontend's service using
+                PHP.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/Sql.png" />
+              <p>
+                Mastering <strong>SQL</strong> is an essential part of database
+                management. Although many ORMs can perform database operations
+                without embedded SQL commands, knowing SQL is still crucial
+                because some tasks may require specialized queries or other
+                operations. Throughout my studies and work, I have continuously
+                applied my SQL knowledge within various database management
+                systems.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/html-css.jpg" />
+              <p>
+                Web programming is unimaginable without knowledge of
+                <strong>HTML and CSS</strong>. As a web developer, I
+                continuously expand my knowledge of these languages, always
+                looking for simpler and newer options and solutions. SCSS offers
+                more features than CSS, so whenever possible, I use it during
+                application development.
+              </p>
+            </div>
+            <p data-lang="de" style="display: none">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+
+        <div class="project" id="project1">
+          <div class="project-header">
+            <h2>Frameworks and Libraries</h2>
+          </div>
+          <div class="skill-details">
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/angular_icon_gradient.gif" />
+              <p>
+                My first experience with Angular was both exciting and
+                challenging, especially when navigating its modular structure
+                and powerful features like data binding and dependency
+                injection. Setting up projects with the Angular CLI was
+                straightforward, and I quickly saw the efficiency in how Angular
+                synchronizes the model and view. Although I initially struggled
+                with routing and debugging, tools like Angular DevTools helped
+                me build confidence. Learning about directives and two-way
+                binding felt like unlocking a new level of control over the DOM.
+                Despite the challenges, these experiences deepened my
+                appreciation for Angular's capabilities.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/Rxjs.png" />
+              <p>
+                When I first meet RxJS it was both intriguing and daunting, as I
+                encountered its complex concepts like observables, operators,
+                and reactive programming. Initially, understanding how to create
+                and work with observables felt overwhelming, but as I practiced,
+                I began to see the power in handling asynchronous data streams.
+                The vast array of operators available in RxJS was confusing at
+                first, but I gradually learned how to use them to transform and
+                manipulate data efficiently. Debugging reactive code presented a
+                challenge, but tools like the RxJS DevTools helped me visualize
+                the data flow and pinpoint issues. Despite the steep learning
+                curve, working with RxJS has given me a deeper understanding of
+                reactive programming and its benefits in building responsive
+                applications.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/gorm.png" />
+              <p>
+                Diving into GORM was both fascinating and challenging,
+                especially as I learned to work with databases in a more
+                abstract way. Initially, understanding how GORM’s ORM
+                (Object-Relational Mapping) functions felt complex, but as I got
+                more familiar with it, I started to appreciate the simplicity it
+                brings to database operations. The ability to perform CRUD
+                operations with minimal SQL was a game-changer, although
+                figuring out relationships and associations between models
+                required some extra effort. Debugging queries and understanding
+                how GORM translates Go structs into database tables took time,
+                but it became easier with practice. Despite the initial hurdles,
+                using GORM has enhanced my ability to manage and interact with
+                databases more effectively.
+              </p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/echo.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/playwright.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/bootstrap.png" />
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="project" id="project1">
+          <div class="project-header">
+            <h2>Databases</h2>
+          </div>
+          <div class="skill-details">
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/mariadb.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/mysql.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/Cockroach_Labs_Logo.png" />
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="project" id="project1">
+          <div class="project-header">
+            <h2>Spoken languages</h2>
+          </div>
+          <div class="skill-details">
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/english.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/german-austria.png" />
+              <p></p>
+            </div>
+            <div class="skill-with-image">
+              <img class="skill-image" src="images/hungarian.png" />
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Attila Szöllősi</p>
+      <p>&copy; 2024 Attila Szöllősi</p>
     </footer>
-</body>
+  </body>
 </html>
